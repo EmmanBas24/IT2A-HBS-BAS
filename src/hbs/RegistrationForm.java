@@ -12,9 +12,10 @@ public class RegistrationForm extends javax.swing.JFrame {
  
     public RegistrationForm() {
         initComponents();
+         this.setResizable(false);
     }
 
- public static String email, usn;
+    public static String email, usn;
     
     public boolean duplicateCheck(){
     
@@ -54,7 +55,6 @@ public class RegistrationForm extends javax.swing.JFrame {
 
         jLabel7 = new javax.swing.JLabel();
         MAIN = new javax.swing.JPanel();
-        jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -83,51 +83,35 @@ public class RegistrationForm extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(800, 400));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        MAIN.setBackground(new java.awt.Color(255, 255, 255));
         MAIN.setToolTipText("DDAS");
-        MAIN.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jPanel1.setBackground(new java.awt.Color(51, 0, 204));
-        jPanel1.setForeground(new java.awt.Color(51, 51, 255));
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-
-        MAIN.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 200, 430));
+        MAIN.setPreferredSize(new java.awt.Dimension(800, 420));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 153));
-        jLabel1.setText("Register ");
-        MAIN.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 20, -1, -1));
+        jLabel1.setForeground(new java.awt.Color(0, 102, 102));
+        jLabel1.setText("Register  ");
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 51, 51));
         jLabel2.setText("Email");
-        MAIN.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 140, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 51, 51));
         jLabel3.setText("First Name");
-        MAIN.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 80, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 51, 51));
         jLabel4.setText("Last Name");
-        MAIN.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 80, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(0, 51, 51));
         jLabel6.setText("Account Type");
-        MAIN.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 200, 110, -1));
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(0, 51, 51));
         jLabel8.setText("Username");
-        MAIN.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 140, -1, -1));
-        MAIN.add(ps, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 220, 220, 30));
 
         fn.setPreferredSize(new java.awt.Dimension(50, 20));
         fn.addActionListener(new java.awt.event.ActionListener() {
@@ -135,18 +119,14 @@ public class RegistrationForm extends javax.swing.JFrame {
                 fnActionPerformed(evt);
             }
         });
-        MAIN.add(fn, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 100, 220, 30));
 
         ln.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 lnActionPerformed(evt);
             }
         });
-        MAIN.add(ln, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 100, 220, 30));
-        MAIN.add(em, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 160, 220, 30));
-        MAIN.add(usr, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 160, 220, 30));
 
-        jButton1.setBackground(new java.awt.Color(0, 0, 255));
+        jButton1.setBackground(new java.awt.Color(0, 51, 51));
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Register");
@@ -155,7 +135,6 @@ public class RegistrationForm extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        MAIN.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 270, 210, 40));
 
         ty.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "User", "Admin" }));
         ty.addActionListener(new java.awt.event.ActionListener() {
@@ -163,39 +142,111 @@ public class RegistrationForm extends javax.swing.JFrame {
                 tyActionPerformed(evt);
             }
         });
-        MAIN.add(ty, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 220, 220, 30));
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(0, 51, 51));
         jLabel9.setText("Password");
-        MAIN.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 200, -1, -1));
 
         jLabel5.setBackground(new java.awt.Color(0, 0, 204));
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
         jLabel5.setText("Already have an account?");
-        MAIN.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 320, -1, -1));
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(0, 51, 153));
+        jLabel10.setForeground(new java.awt.Color(0, 51, 51));
         jLabel10.setText("Sign in");
         jLabel10.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel10MouseClicked(evt);
             }
         });
-        MAIN.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 320, -1, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(MAIN, javax.swing.GroupLayout.DEFAULT_SIZE, 800, Short.MAX_VALUE)
+        javax.swing.GroupLayout MAINLayout = new javax.swing.GroupLayout(MAIN);
+        MAIN.setLayout(MAINLayout);
+        MAINLayout.setHorizontalGroup(
+            MAINLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(MAINLayout.createSequentialGroup()
+                .addGap(320, 320, 320)
+                .addComponent(jLabel1))
+            .addGroup(MAINLayout.createSequentialGroup()
+                .addGap(160, 160, 160)
+                .addComponent(jLabel3)
+                .addGap(210, 210, 210)
+                .addComponent(jLabel4))
+            .addGroup(MAINLayout.createSequentialGroup()
+                .addGap(160, 160, 160)
+                .addComponent(fn, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(50, 50, 50)
+                .addComponent(ln, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(MAINLayout.createSequentialGroup()
+                .addGap(160, 160, 160)
+                .addComponent(jLabel8)
+                .addGap(213, 213, 213)
+                .addComponent(jLabel2))
+            .addGroup(MAINLayout.createSequentialGroup()
+                .addGap(160, 160, 160)
+                .addComponent(usr, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(50, 50, 50)
+                .addComponent(em, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(MAINLayout.createSequentialGroup()
+                .addGap(160, 160, 160)
+                .addComponent(jLabel9)
+                .addGap(218, 218, 218)
+                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(MAINLayout.createSequentialGroup()
+                .addGap(160, 160, 160)
+                .addComponent(ps, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(50, 50, 50)
+                .addComponent(ty, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(MAINLayout.createSequentialGroup()
+                .addGap(280, 280, 280)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(MAINLayout.createSequentialGroup()
+                .addGap(290, 290, 290)
+                .addComponent(jLabel5)
+                .addGap(7, 7, 7)
+                .addComponent(jLabel10))
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(MAIN, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        MAINLayout.setVerticalGroup(
+            MAINLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(MAINLayout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jLabel1)
+                .addGap(12, 12, 12)
+                .addGroup(MAINLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel4))
+                .addGap(4, 4, 4)
+                .addGroup(MAINLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(fn, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ln, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(10, 10, 10)
+                .addGroup(MAINLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel8)
+                    .addComponent(jLabel2))
+                .addGap(4, 4, 4)
+                .addGroup(MAINLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(usr, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(em, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(10, 10, 10)
+                .addGroup(MAINLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel9)
+                    .addComponent(jLabel6))
+                .addGap(4, 4, 4)
+                .addGroup(MAINLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(ps, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ty, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(20, 20, 20)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addGroup(MAINLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel5)
+                    .addComponent(jLabel10)))
         );
+
+        getContentPane().add(MAIN, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 400));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void lnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lnActionPerformed
@@ -204,37 +255,43 @@ public class RegistrationForm extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
        
-        if(fn.getText().isEmpty()||ln.getText().isEmpty()||em.getText().isEmpty()||usr.getText().isEmpty()||
-                ps.getText().isEmpty()){
-           JOptionPane.showMessageDialog(null,"All  Fields are  required!");
-             }else if(ps.getText().length() < 8){
-           JOptionPane.showMessageDialog(null,"Password should have at least 8 characters.!");
-           ps.setText("");
-             }else if(duplicateCheck()){             
-             System.out.println("Duplicate Exist");
-             }else{
-        
-           dbConnector dbc = new dbConnector();
-         int rowsAffected = dbc.insertData("INSERT INTO tbl_user(u_fname, u_lname, u_email, u_user, u_pass, u_type, u_status)"
-        + "VALUES('"+fn.getText()+"', '"+ln.getText()+"', '"+em.getText()+"', '"+usr.getText()+"',"
-        + "'"+ps.getText()+"','"+ty.getSelectedItem()+"', 'Pending')");
-
-        if (rowsAffected > 0) {
-            JOptionPane.showMessageDialog(null,"Inserted Successfully!");
-            LoginForm lf = new LoginForm();
-            lf.setVisible(true);
-            this.dispose();
+           if (fn.getText().isEmpty() || ln.getText().isEmpty() || em.getText().isEmpty() || usr.getText().isEmpty() ||
+            ps.getText().isEmpty()) {
+            JOptionPane.showMessageDialog(null, "All Fields are required!");
+        } else if (!fn.getText().matches("[a-zA-Z ]+")) { // First name validation
+            JOptionPane.showMessageDialog(null, "First name must contain only letters!");
+            fn.setText("");
+        } else if (!ln.getText().matches("[a-zA-Z ]+")) { // Last name validation
+            JOptionPane.showMessageDialog(null, "Last name must contain only letters!");
+            ln.setText("");
+        } else if (!em.getText().matches("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,6}$")) { // Email validation
+            JOptionPane.showMessageDialog(null, "Please enter a valid email address!");
+            em.setText("");
+        } else if (ps.getText().length() < 8) { // Password length validation
+            JOptionPane.showMessageDialog(null, "Password should have at least 8 characters!");
+            ps.setText("");
+        } else if (duplicateCheck()) { // Check for duplicate user
+            System.out.println("Duplicate Exist");
         } else {
-            String errorMessage = "Connection Error!";
-            if (rowsAffected == 0) {
-                errorMessage = "Error inserting user. Likely a duplicate entry or other constraint violation.";
+            dbConnector dbc = new dbConnector();
+            int rowsAffected = dbc.insertData("INSERT INTO tbl_user(u_fname, u_lname, u_email, u_user, u_pass, u_type, u_status) " +
+                "VALUES('" + fn.getText() + "', '" + ln.getText() + "', '" + em.getText() + "', '" + usr.getText() + "', " +
+                "'" + ps.getText() + "','" + ty.getSelectedItem() + "', 'Pending')");
+
+            if (rowsAffected > 0) {
+                JOptionPane.showMessageDialog(null, "Inserted Successfully!");
+                LoginForm lf = new LoginForm();
+                lf.setVisible(true);
+                this.dispose();
+            } else {
+                String errorMessage = "Connection Error!";
+                if (rowsAffected == 0) {
+                    errorMessage = "Error inserting user. Likely a duplicate entry or other constraint violation.";
+                }
+                JOptionPane.showMessageDialog(null, errorMessage, "Error", JOptionPane.ERROR_MESSAGE);
             }
-            JOptionPane.showMessageDialog(null, errorMessage, "Error", JOptionPane.ERROR_MESSAGE); // More informative error message and icon
         }
-        
-        }
-        
-        
+
         
         
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -254,8 +311,8 @@ public class RegistrationForm extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel7MouseClicked
 
     private void jLabel10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseClicked
-        RegistrationForm re = new RegistrationForm();
-        re.setVisible(true);
+        LoginForm lg = new  LoginForm();
+        lg.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jLabel10MouseClicked
 
@@ -309,7 +366,6 @@ public class RegistrationForm extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField ln;
     private javax.swing.JTextField ps;
     private javax.swing.JComboBox<String> ty;
