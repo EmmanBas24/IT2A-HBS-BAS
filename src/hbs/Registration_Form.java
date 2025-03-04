@@ -16,7 +16,7 @@ public class Registration_Form extends javax.swing.JFrame {
     }
 
   
-     public static String email, usn;
+    public static String email, usn;
     
     public boolean duplicateCheck(){
     
