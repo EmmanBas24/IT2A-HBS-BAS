@@ -75,7 +75,6 @@ public class Registration_Form extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
-        setPreferredSize(new java.awt.Dimension(800, 420));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 51));
         jPanel1.setMinimumSize(new java.awt.Dimension(800, 420));
@@ -113,6 +112,7 @@ public class Registration_Form extends javax.swing.JFrame {
         jLabel6.setText("Account Type");
 
         ln.setBackground(new java.awt.Color(242, 242, 242));
+        ln.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         ln.setBorder(null);
         ln.setPreferredSize(new java.awt.Dimension(50, 20));
         ln.addActionListener(new java.awt.event.ActionListener() {
@@ -131,6 +131,7 @@ public class Registration_Form extends javax.swing.JFrame {
         });
 
         fn.setBackground(new java.awt.Color(242, 242, 242));
+        fn.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         fn.setBorder(null);
         fn.setPreferredSize(new java.awt.Dimension(50, 20));
         fn.addActionListener(new java.awt.event.ActionListener() {
@@ -140,6 +141,7 @@ public class Registration_Form extends javax.swing.JFrame {
         });
 
         em.setBackground(new java.awt.Color(242, 242, 242));
+        em.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         em.setBorder(null);
         em.setPreferredSize(new java.awt.Dimension(50, 20));
         em.addActionListener(new java.awt.event.ActionListener() {
@@ -149,6 +151,7 @@ public class Registration_Form extends javax.swing.JFrame {
         });
 
         ps.setBackground(new java.awt.Color(242, 242, 242));
+        ps.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         ps.setBorder(null);
         ps.setPreferredSize(new java.awt.Dimension(50, 20));
         ps.addActionListener(new java.awt.event.ActionListener() {
@@ -158,6 +161,7 @@ public class Registration_Form extends javax.swing.JFrame {
         });
 
         usr.setBackground(new java.awt.Color(242, 242, 242));
+        usr.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         usr.setBorder(null);
         usr.setPreferredSize(new java.awt.Dimension(50, 20));
         usr.addActionListener(new java.awt.event.ActionListener() {
