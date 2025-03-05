@@ -1,6 +1,7 @@
 
 package hbs;
 
+import Config.Session;
 import Config.dbConnector;
 import admin.adminDashboard;
 import java.sql.ResultSet;
@@ -27,8 +28,18 @@ public class LoginForm extends javax.swing.JFrame {
             ResultSet resultSet = connector.getData(query);
             
             if (resultSet.next()) {
+             
                 status = resultSet.getString("u_status");
                 type = resultSet.getString("u_type");
+                Session sess = Session.getInstance();
+                sess.setUid(resultSet.getInt("u_id"));
+                sess.setFname(resultSet.getString("u_fname"));
+                sess.setLname(resultSet.getString("u_lname"));
+                sess.setEmail(resultSet.getString("u_email"));
+                sess.setUsername(resultSet.getString("u_user"));
+                sess.setType(resultSet.getString("u_type"));
+                sess.setStatus(resultSet.getString("u_status"));
+              
                 return true;
             } else {
                 return false;
@@ -56,6 +67,7 @@ public class LoginForm extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
         setPreferredSize(new java.awt.Dimension(800, 430));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -73,8 +85,10 @@ public class LoginForm extends javax.swing.JFrame {
         jLabel2.setText("Username");
         Main.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 130, -1, -1));
 
+        user.setBackground(new java.awt.Color(242, 242, 242));
         user.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         user.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        user.setBorder(null);
         user.setMinimumSize(new java.awt.Dimension(8, 20));
         user.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -83,7 +97,9 @@ public class LoginForm extends javax.swing.JFrame {
         });
         Main.add(user, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 160, 220, 30));
 
+        pass.setBackground(new java.awt.Color(242, 242, 242));
         pass.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        pass.setBorder(null);
         pass.setPreferredSize(new java.awt.Dimension(8, 20));
         pass.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -121,12 +137,12 @@ public class LoginForm extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 153, 153));
         jLabel5.setText("Your stay starts here! Log in to book now.");
-        Main.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 100, -1, -1));
+        Main.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 90, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 40)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(0, 102, 102));
-        jLabel6.setText("Malaya Stays");
-        Main.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 40, 250, -1));
+        jLabel6.setText("ITL HOTEL");
+        Main.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 30, 250, -1));
 
         jPanel2.setBackground(new java.awt.Color(0, 102, 102));
 
@@ -134,14 +150,14 @@ public class LoginForm extends javax.swing.JFrame {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 370, Short.MAX_VALUE)
+            .addGap(0, 400, Short.MAX_VALUE)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
         );
 
-        Main.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 440));
+        Main.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 420));
 
         getContentPane().add(Main, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 420));
 
@@ -173,7 +189,7 @@ public class LoginForm extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
     
     private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
-         RegistrationForm re = new RegistrationForm();
+         Registration_Form re = new Registration_Form();
          re.setVisible(true);
          this.dispose();
     }//GEN-LAST:event_jLabel4MouseClicked
