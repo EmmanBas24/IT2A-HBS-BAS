@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
-    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="1">
+        <file>
+            <url>src/admin/admin_User_Add.java</url>
+            <bookmark id="1">
+                <name/>
+                <line>462</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/russe/OneDrive/Documents/NetBeansProjects/JavaApplication18/src/user/userDashboard.java</file>
-            <file>file:/C:/Users/russe/OneDrive/Documents/NetBeansProjects/JavaApplication18/src/hbs/Registration_Form.java</file>
-            <file>file:/C:/Users/russe/OneDrive/Documents/NetBeansProjects/JavaApplication18/src/hbs/LoginForm.java</file>
-            <file>file:/C:/Users/russe/OneDrive/Documents/NetBeansProjects/JavaApplication18/src/admin/adminDashboard.java</file>
-            <file>file:/C:/Users/russe/OneDrive/Documents/NetBeansProjects/JavaApplication18/src/admin/UserForms.java</file>
-            <file>file:/C:/Users/russe/OneDrive/Documents/NetBeansProjects/JavaApplication18/src/Config/Session.java</file>
-            <file>file:/C:/Users/russe/OneDrive/Documents/NetBeansProjects/JavaApplication18/src/admin/admin_settings.java</file>
+            <file>file:/C:/Users/russe/OneDrive/Desktop/IT2A-HBS-BAS/src/hbs/Registration_Form.java</file>
+            <file>file:/C:/Users/russe/OneDrive/Desktop/IT2A-HBS-BAS/src/Config/passwordHasher.java</file>
+            <file>file:/C:/Users/russe/OneDrive/Desktop/IT2A-HBS-BAS/src/admin/admin_settings.java</file>
+            <file>file:/C:/Users/russe/OneDrive/Desktop/IT2A-HBS-BAS/src/admin/admin_user_update.java</file>
+            <file>file:/C:/Users/russe/OneDrive/Desktop/IT2A-HBS-BAS/src/admin/UserForms.java</file>
+            <file>file:/C:/Users/russe/OneDrive/Desktop/IT2A-HBS-BAS/src/Config/dbConnector.java</file>
+            <file>file:/C:/Users/russe/OneDrive/Desktop/IT2A-HBS-BAS/src/admin/adminDashboard.java</file>
+            <file>file:/C:/Users/russe/OneDrive/Desktop/IT2A-HBS-BAS/src/admin/admin_user_add.java</file>
         </group>
     </open-files>
 </project-private>
