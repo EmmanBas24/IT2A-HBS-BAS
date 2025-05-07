@@ -12,14 +12,24 @@
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/russe/OneDrive/Desktop/IT2A-HBS-BAS/src/hbs/Registration_Form.java</file>
-            <file>file:/C:/Users/russe/OneDrive/Desktop/IT2A-HBS-BAS/src/Config/passwordHasher.java</file>
-            <file>file:/C:/Users/russe/OneDrive/Desktop/IT2A-HBS-BAS/src/admin/admin_settings.java</file>
-            <file>file:/C:/Users/russe/OneDrive/Desktop/IT2A-HBS-BAS/src/admin/admin_user_update.java</file>
-            <file>file:/C:/Users/russe/OneDrive/Desktop/IT2A-HBS-BAS/src/admin/UserForms.java</file>
-            <file>file:/C:/Users/russe/OneDrive/Desktop/IT2A-HBS-BAS/src/Config/dbConnector.java</file>
-            <file>file:/C:/Users/russe/OneDrive/Desktop/IT2A-HBS-BAS/src/admin/adminDashboard.java</file>
-            <file>file:/C:/Users/russe/OneDrive/Desktop/IT2A-HBS-BAS/src/admin/admin_user_add.java</file>
+            <file>file:/C:/Users/PATENIORICAMAEB(MING/Desktop/IT2A-HBS-BAS/src/admin/UserForms.java</file>
+            <file>file:/C:/Users/PATENIORICAMAEB(MING/Desktop/IT2A-HBS-BAS/src/admin/Manage_room.java</file>
+            <file>file:/C:/Users/PATENIORICAMAEB(MING/Desktop/IT2A-HBS-BAS/src/admin/adminDashboard.java</file>
+            <file>file:/C:/Users/PATENIORICAMAEB(MING/Desktop/IT2A-HBS-BAS/src/admin/admin_user_add.java</file>
+            <file>file:/C:/Users/PATENIORICAMAEB(MING/Desktop/IT2A-HBS-BAS/src/admin/guestform.java</file>
+            <file>file:/C:/Users/PATENIORICAMAEB(MING/Desktop/IT2A-HBS-BAS/src/admin/admin_settings.java</file>
+            <file>file:/C:/Users/PATENIORICAMAEB(MING/Desktop/IT2A-HBS-BAS/src/admin/update_room.java</file>
+            <file>file:/C:/Users/PATENIORICAMAEB(MING/Desktop/IT2A-HBS-BAS/src/admin/add_category.java</file>
+            <file>file:/C:/Users/PATENIORICAMAEB(MING/Desktop/IT2A-HBS-BAS/src/admin/updateguest.java</file>
+            <file>file:/C:/Users/PATENIORICAMAEB(MING/Desktop/IT2A-HBS-BAS/src/admin/roomcategory.java</file>
+            <file>file:/C:/Users/PATENIORICAMAEB(MING/Desktop/IT2A-HBS-BAS/src/admin/admin_password.java</file>
+            <file>file:/C:/Users/PATENIORICAMAEB(MING/Desktop/IT2A-HBS-BAS/src/admin/admin_logs.java</file>
+            <file>file:/C:/Users/PATENIORICAMAEB(MING/Desktop/IT2A-HBS-BAS/src/admin/update_category.java</file>
+            <file>file:/C:/Users/PATENIORICAMAEB(MING/Desktop/IT2A-HBS-BAS/src/admin/Add_room.java</file>
+            <file>file:/C:/Users/PATENIORICAMAEB(MING/Desktop/IT2A-HBS-BAS/src/hbs/LoginForm.java</file>
+            <file>file:/C:/Users/PATENIORICAMAEB(MING/Desktop/IT2A-HBS-BAS/src/Config/dbConnector.java</file>
+            <file>file:/C:/Users/PATENIORICAMAEB(MING/Desktop/IT2A-HBS-BAS/src/admin/admin_user_update.java</file>
+            <file>file:/C:/Users/PATENIORICAMAEB(MING/Desktop/IT2A-HBS-BAS/src/admin/addguest.java</file>
         </group>
     </open-files>
 </project-private>

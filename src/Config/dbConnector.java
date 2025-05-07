@@ -49,19 +49,21 @@ public class dbConnector {
         
         
         //Function to update data
-        public void updateData(String sql){
-            try{
-                PreparedStatement pst = connect.prepareStatement(sql);
-                    int rowsUpdated = pst.executeUpdate();
-                        if(rowsUpdated > 0){
-                            JOptionPane.showMessageDialog(null, "Data Updated Successfully!");
-                        }else{
-                            System.out.println("Data Update Failed!");
-                        }
-                        pst.close();
-            }catch(SQLException ex){
-                System.out.println("Connection Error: "+ex);
-            }
-        
-        }
+     public int updateData(String sql) {
+    int result = 0; // Default value for no rows updated
+    try {
+        PreparedStatement pst = connect.prepareStatement(sql);
+        result = pst.executeUpdate(); // Executes the update and returns number of rows affected
+        System.out.println(result + " rows updated.");
+        pst.close();
+    } catch (SQLException ex) {
+        System.out.println("SQL Error: " + ex.getMessage());
+    }
+    return result;
+}
+
+
+    public Connection getConnection() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
