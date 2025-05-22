@@ -210,8 +210,7 @@ public class LoginForm extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        
-        if (loginAcc(user.getText(), pass.getText())) { 
+               if (loginAcc(user.getText(), pass.getText())) { 
             if (!status.equals("Active")) {
                 JOptionPane.showMessageDialog(null, "Account is not active!");
             } else {
@@ -219,7 +218,7 @@ public class LoginForm extends javax.swing.JFrame {
                 if (type.equals("Admin")) {
                     adminDashboard ads = new adminDashboard();
                     ads.setVisible(true);
-                } else if (type.equals("User")) {
+                } else if (type.equals("Receptionist")) {
                     userDashboard usr = new userDashboard();
                     usr.setVisible(true);
                 } else {

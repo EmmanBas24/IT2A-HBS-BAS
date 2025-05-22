@@ -165,11 +165,7 @@ public class admin_user_add extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jPanel16 = new javax.swing.JPanel();
-        jPanel17 = new javax.swing.JPanel();
-        jLabel19 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -532,7 +528,7 @@ public class admin_user_add extends javax.swing.JFrame {
         });
 
         jLabel4.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 204, 0));
+        jLabel4.setForeground(new java.awt.Color(242, 242, 242));
         jLabel4.setText("Users");
         jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -558,56 +554,13 @@ public class admin_user_add extends javax.swing.JFrame {
             }
         });
 
-        jPanel16.setBackground(new java.awt.Color(255, 204, 0));
-        jPanel16.setForeground(new java.awt.Color(255, 204, 0));
-        jPanel16.setPreferredSize(new java.awt.Dimension(7, 40));
-
-        javax.swing.GroupLayout jPanel16Layout = new javax.swing.GroupLayout(jPanel16);
-        jPanel16.setLayout(jPanel16Layout);
-        jPanel16Layout.setHorizontalGroup(
-            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 7, Short.MAX_VALUE)
-        );
-        jPanel16Layout.setVerticalGroup(
-            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 40, Short.MAX_VALUE)
-        );
-
-        jPanel17.setBackground(new java.awt.Color(255, 204, 0));
-        jPanel17.setForeground(new java.awt.Color(255, 204, 0));
-        jPanel17.setPreferredSize(new java.awt.Dimension(7, 40));
-
-        javax.swing.GroupLayout jPanel17Layout = new javax.swing.GroupLayout(jPanel17);
-        jPanel17.setLayout(jPanel17Layout);
-        jPanel17Layout.setHorizontalGroup(
-            jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 7, Short.MAX_VALUE)
-        );
-        jPanel17Layout.setVerticalGroup(
-            jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 40, Short.MAX_VALUE)
-        );
-
-        jLabel19.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
-        jLabel19.setForeground(new java.awt.Color(242, 242, 242));
-        jLabel19.setText("Records");
-        jLabel19.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel19MouseClicked(evt);
-            }
-        });
-
-        jLabel21.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
-        jLabel21.setForeground(new java.awt.Color(242, 242, 242));
-        jLabel21.setText("Manage Bookings");
-
-        jLabel18.setFont(new java.awt.Font("Yu Gothic UI", 1, 20)); // NOI18N
-        jLabel18.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel18.setText("SW Hotel");
+        jLabel2.setFont(new java.awt.Font("Yu Gothic UI", 1, 20)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("SW Hotel");
 
         jLabel20.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
         jLabel20.setForeground(new java.awt.Color(242, 242, 242));
-        jLabel20.setText("Manage Guests");
+        jLabel20.setText("Room Category");
         jLabel20.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel20MouseClicked(evt);
@@ -619,50 +572,32 @@ public class admin_user_add extends javax.swing.JFrame {
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
+                .addContainerGap(53, Short.MAX_VALUE)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel20)
-                    .addComponent(jLabel18)
-                    .addComponent(jLabel21)
-                    .addComponent(jLabel19)
+                    .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel15)
                     .addComponent(jLabel6)
-                    .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addGroup(jPanel4Layout.createSequentialGroup()
-                            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel5)
-                                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGap(45, 45, 45))
-                        .addGroup(jPanel4Layout.createSequentialGroup()
-                            .addComponent(jLabel4)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jLabel15)))
+                    .addComponent(jLabel5)
+                    .addComponent(jLabel4)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(45, 45, 45))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(43, 43, 43)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
                 .addComponent(jLabel15)
-                .addGap(18, 18, 18)
+                .addGap(17, 17, 17)
                 .addComponent(jLabel3)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel21)
-                .addGap(8, 8, 8)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel4))
-                    .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel17, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel6)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel19)
-                .addGap(18, 18, 18)
                 .addComponent(jLabel20)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 68, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel4)
+                .addGap(21, 21, 21)
+                .addComponent(jLabel6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 144, Short.MAX_VALUE)
                 .addComponent(jLabel5)
                 .addGap(58, 58, 58))
         );
@@ -762,40 +697,6 @@ public class admin_user_add extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_jPanel11MouseClicked
 
-    private void jLabel15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel15MouseClicked
-        adminDashboard ad = new adminDashboard();
-        ad.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_jLabel15MouseClicked
-
-    private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
-        UserForms uf = new UserForms();
-        uf.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_jLabel4MouseClicked
-
-    private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
-        int confirm = JOptionPane.showConfirmDialog(null, "Are you sure you want to exit?", "Exit Confirmation", JOptionPane.YES_NO_OPTION);
-
-        if (confirm == JOptionPane.YES_OPTION) {
-            LoginForm lf = new LoginForm ();
-            lf.setVisible(true);
-            this.dispose();
-        }
-    }//GEN-LAST:event_jLabel5MouseClicked
-
-    private void jLabel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseClicked
-        admin_settings se = new admin_settings();
-        se.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_jLabel6MouseClicked
-
-    private void jLabel19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel19MouseClicked
-        admin_logs lo = new admin_logs();
-        lo.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_jLabel19MouseClicked
-
     private void selectActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_selectActionPerformed
 
         JFileChooser fileChooser = new JFileChooser();
@@ -830,15 +731,43 @@ public class admin_user_add extends javax.swing.JFrame {
         path = "";
     }//GEN-LAST:event_removeActionPerformed
 
+    private void jLabel15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel15MouseClicked
+        adminDashboard ad = new adminDashboard();
+        ad.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jLabel15MouseClicked
+
     private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
-         Manage_room mr = new Manage_room();
+        Manage_room mr = new Manage_room();
         mr.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jLabel3MouseClicked
 
+    private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
+        UserForms uf = new UserForms();
+        uf.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jLabel4MouseClicked
+
+    private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
+        int confirm = JOptionPane.showConfirmDialog(null, "Are you sure you want to exit?", "Exit Confirmation", JOptionPane.YES_NO_OPTION);
+
+        if (confirm == JOptionPane.YES_OPTION) {
+            LoginForm lf = new LoginForm ();
+            lf.setVisible(true);
+            this.dispose();
+        }
+    }//GEN-LAST:event_jLabel5MouseClicked
+
+    private void jLabel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseClicked
+        admin_settings se = new admin_settings();
+        se.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jLabel6MouseClicked
+
     private void jLabel20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel20MouseClicked
-        guestform g = new guestform();
-        g.setVisible(true);
+        roomcategory rc = new roomcategory();
+        rc.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jLabel20MouseClicked
 
@@ -892,10 +821,8 @@ public class admin_user_add extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -904,8 +831,6 @@ public class admin_user_add extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel11;
-    private javax.swing.JPanel jPanel16;
-    private javax.swing.JPanel jPanel17;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;

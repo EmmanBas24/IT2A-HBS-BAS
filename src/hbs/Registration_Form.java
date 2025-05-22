@@ -153,7 +153,7 @@ public class Registration_Form extends javax.swing.JFrame {
         ty.setBackground(new java.awt.Color(204, 204, 204));
         ty.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
         ty.setForeground(new java.awt.Color(51, 51, 51));
-        ty.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "User", "Admin" }));
+        ty.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Receptionist", "Admin" }));
         ty.setBorder(null);
         ty.setPreferredSize(new java.awt.Dimension(230, 30));
         ty.addActionListener(new java.awt.event.ActionListener() {

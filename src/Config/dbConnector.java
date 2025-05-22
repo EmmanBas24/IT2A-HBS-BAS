@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
 
 public class dbConnector {
     
-    private Connection connect;
+    public Connection connect;
 
       
         public dbConnector(){
@@ -63,7 +63,7 @@ public class dbConnector {
 }
 
 
-    public Connection getConnection() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+   public Connection getConnection() {
+    return connect;
+}
 }
