@@ -147,8 +147,9 @@ public class Add_room extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -400,7 +401,7 @@ public class Add_room extends javax.swing.JFrame {
         jPanel4.setBackground(new java.awt.Color(0, 0, 0));
 
         jLabel15.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(242, 242, 242));
+        jLabel15.setForeground(new java.awt.Color(255, 204, 0));
         jLabel15.setText("Dashboard");
         jLabel15.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -444,9 +445,9 @@ public class Add_room extends javax.swing.JFrame {
             }
         });
 
-        jLabel12.setFont(new java.awt.Font("Yu Gothic UI", 1, 20)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel12.setText("SW Hotel");
+        jLabel2.setFont(new java.awt.Font("Yu Gothic UI", 1, 20)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("SW Hotel");
 
         jLabel14.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(242, 242, 242));
@@ -457,6 +458,15 @@ public class Add_room extends javax.swing.JFrame {
             }
         });
 
+        jLabel13.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(242, 242, 242));
+        jLabel13.setText("Booking");
+        jLabel13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel13MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
@@ -464,8 +474,9 @@ public class Add_room extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                 .addContainerGap(53, Short.MAX_VALUE)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel13)
                     .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel12)
+                    .addComponent(jLabel2)
                     .addComponent(jLabel15)
                     .addComponent(jLabel6)
                     .addComponent(jLabel5)
@@ -476,18 +487,20 @@ public class Add_room extends javax.swing.JFrame {
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
                 .addComponent(jLabel15)
                 .addGap(17, 17, 17)
                 .addComponent(jLabel3)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel14)
+                .addGap(16, 16, 16)
+                .addComponent(jLabel13)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel4)
                 .addGap(21, 21, 21)
                 .addComponent(jLabel6)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 144, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 108, Short.MAX_VALUE)
                 .addComponent(jLabel5)
                 .addGap(58, 58, 58))
         );
@@ -619,6 +632,12 @@ public class Add_room extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_jLabel14MouseClicked
 
+    private void jLabel13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel13MouseClicked
+        bookingpage rc = new bookingpage();
+        rc.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jLabel13MouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -664,12 +683,13 @@ public class Add_room extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel3;

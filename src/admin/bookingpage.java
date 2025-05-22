@@ -201,9 +201,8 @@ public void displayData() {
         comboStatus.setBounds(630, 40, 150, 40);
 
         jLabel19.setFont(new java.awt.Font("Yu Gothic UI", 3, 18)); // NOI18N
-        jLabel19.setText("HOTEL BOOKING SYSTEM");
         jPanel2.add(jLabel19);
-        jLabel19.setBounds(50, 40, 222, 25);
+        jLabel19.setBounds(50, 40, 222, 0);
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 50, 800, 450));
 

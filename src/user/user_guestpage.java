@@ -984,7 +984,9 @@ public class user_guestpage extends javax.swing.JFrame {
         int confirm = JOptionPane.showConfirmDialog(null, "Are you sure you want to exit?", "Exit Confirmation", JOptionPane.YES_NO_OPTION);
 
         if (confirm == JOptionPane.YES_OPTION) {
-            System.exit(0);
+            LoginForm lf = new LoginForm ();
+            lf.setVisible(true);
+            this.dispose();
         }
     }//GEN-LAST:event_jLabel5MouseClicked
 
